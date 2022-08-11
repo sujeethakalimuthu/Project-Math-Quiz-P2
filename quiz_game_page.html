@@ -1,32 +1,39 @@
-<html lang = "en">
-    <head>
-        <title>
-            The Math Quiz Game!
-        </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Are+You+Serious&family=Cabin+Sketch:wght@700&family=Mouse+Memoirs&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
-        <link rel = "stylesheet" href = "quiz_game.css">
-    </head>
-    <body>
-        <h4 id = "player1_name">
+<!DOCTYPE html>
+<html lang="en">
 
-        </h4>
-        <span id = player1_score>
+<head>
+    <title>
+        The Math Quiz Game!
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Are+You+Serious&family=Cabin+Sketch:wght@700&family=Mouse+Memoirs&family=Rubik+Moonrocks&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="quiz_game.css">
+    <link rel="shortcut icon" href="#">
+</head>
 
-        </span>
-        <br>
-        <br>
-        <h4 id = "player2_name">
+<body>
+    <h4 id="player1_name">
 
-        </h4>
-        <span id = player2_score>
-            
-        </span>
+    </h4>
+    <span id=player1_score>
+
+    </span>
+    <br>
+    <br>
+    <h4 id="player2_name">
+
+    </h4>
+    <span id=player2_score>
+
+    </span>
+    <div class="container">
         <center>
             <h1>
                 Math Quiz
@@ -34,20 +41,20 @@
             <h2>
 
             </h2>
-            <div id = "output">
-                <h4 id = "question">
+            <div id="output">
+                <h3 id="question">
 
-                </h4>
+                </h3>
                 <br>
                 <span>
                     <label>
                         Answer:
                     </label>
-                    <input type = "text" placeholder = "Answer" id = "answer">
+                    <input type="text" placeholder="Answer" id="answer">
                 </span>
                 <br>
                 <br>
-                <button id = "Check" onclick = "Check()">
+                <button id="Check" class="btn btn-info" onclick="Check()">
                     <b>
                         Check
                     </b>
@@ -55,25 +62,28 @@
             </div>
             <br>
             <br>
-            <label class = "number">
+            <label class="number">
                 Number 1
             </label>
             <br>
-            <input type = "text" placeholder = "Number 1">
+            <input type="number" placeholder="Number 1" id="Number-1">
             <br>
             <br>
-            <label class = "number">
+            <label class="number">
                 Number 2
             </label>
             <br>
-            <input type = "text" placeholder = "Number 2">
+            <input type="number" placeholder="Number 2" id="Number-2">
             <br>
             <br>
             <div>
-                <button id = "Send" onclick = "Send()">
+                <button id="Send" onclick="Send()">
                     Send
                 </button>
             </div>
         </center>
-    </body>
+    </div>
+</body>
+<script src="quiz_game_page.js"></script>
+
 </html>
