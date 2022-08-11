@@ -53,3 +53,13 @@ input
 {
     font-family:'Mouse Memoirs', san-serif;
 }
+#Send
+{
+    background-color:rgb(51, 167, 36);
+    color:white;
+    border-radius:20px;
+    height:100px;
+    width:1000px;
+    font-size:70px;
+    font-family:'Rubik Moonrocks', cursive;
+}
